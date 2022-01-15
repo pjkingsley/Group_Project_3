@@ -10,6 +10,9 @@ const recipeSchema = new Schema({
         type: image,
         required: false,
     },
+    description: {
+        type: String,
+    },
     author: {
         type: String,
         trim: true,
