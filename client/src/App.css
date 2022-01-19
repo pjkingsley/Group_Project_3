@@ -1,38 +1,127 @@
-.App {
-  text-align: center;
+
+body{
+  margin:0;
+  background-color: var(--main-dark);
+}
+:root{
+  --main-light: rgb(55, 149, 250);
+  --main-dark: rgb(10, 2, 33);
+  --main-med:rgb(29, 50, 72);
+  --white:white;
+}
+/* ------------------------main header--------------------------------------- */
+#main-header{
+display:grid;
+grid-template-columns: 1fr 1fr 1fr;
+text-align: center;
+padding-left:20%;
+padding-right:20%;
+background-color: var(--main-light);
+/* max-height needs to change on mobile and larger sizes. */
+max-height: 15vh;
+}
+#main-header img{
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    padding:0%;
+    padding-top:5%;
+    animation: logoMove 1s infinite;
+}
+#main-header h1{
+  font-size: 3.5em;
+  font-family: 'Brush Script MT', cursive;
+  color: var(--main-dark)
+}
+/* ----------------------side bar----------------------------------- */
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: var(--main-med);
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Style the links inside the navigation bar */
+.topnav a {
+float: left;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Change the color of links on hover */
+.topnav a:hover {
+background-color: #ddd;
+color: black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Add a color to the active/current link */
+.topnav a:active {
+background-color: var(--main-light);
+color: var(--main-dark);
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+float: right;
+}
+
+/* ----------------------------LOGIN/SIGNUP FORM------------------------------------- */
+form {border: 2px solid var(--main-med);
+  margin: 1%;}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+button {
+  background-color: var(--main-light);
   color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  opacity: 0.5;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+img.avatar {
+  width: 20%;
+  border-radius: 50%;
+}
+.container {
+  padding: 16px;
+}
+#main-content{
+display: grid;
+grid-template-columns: 1fr 1fr;
+margin: 5%;
+}
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
   }
-  to {
-    transform: rotate(360deg);
+  .cancelbtn {
+     width: 100%;
   }
+}
+/* ------------------------------------------------------------------ */
+@keyframes logoMove{
+  50% {padding-top: 0%;}
 }
