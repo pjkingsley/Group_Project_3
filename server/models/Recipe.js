@@ -7,7 +7,7 @@ const recipeSchema = new Schema({
         unique: false,
     },
     image: {
-        type: image,
+        type: Buffer,
         required: false,
     },
     description: {
@@ -24,7 +24,7 @@ const recipeSchema = new Schema({
         },
     ],
     instructions: {
-        type: Sting,
+        type: String,
     },
     likes: {
         type: Number,

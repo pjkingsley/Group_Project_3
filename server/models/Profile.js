@@ -1,6 +1,6 @@
 //Referenced week 21 activity 25
 const { Schema, model } = require('mongoose');
-const bycrypt = require('bcrypt');
+const bcrypt = require('bcrypt');
 
 const profileSchema = new Schema({
     name: {
@@ -36,7 +36,7 @@ profileSchema.pre('save', async function (next){
 });
 
 profileSchema.methods.isCorrectPassword = async function (password) {
-    return bycrypt.compare(password, this.password);
+    return bcrypt.compare(password, this.password);
 };
 
 const Profile = model('Profile', profileSchema);
