@@ -35,7 +35,7 @@ const typeDefs = gql`
     addProfile(userName: String!, password: String!): Auth
     login(userName: String, password: String!): Auth
     addRecipe(profileId: ID!, authored: String!): Profile
-    createRecipe(name: String!, image: String, discription: String!, author: ID!, ingredients: String!, inscructions: String!): Recipe
+    createRecipe(name: String!, image: String, discription: String!, author: ID!, ingredients: String!, instructions: String!): Recipe
   }
 `;
 

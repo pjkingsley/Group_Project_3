@@ -42,7 +42,7 @@ const resolvers = {
                 throw new AuthenticationError('No profile with this name found!');
             };
             const token = signToken(profile);
-            return {token, profile };
+            return { token, profile };
         },
         createRecipe: async (parent, {name, image, discription, author, ingredients, instructions}) => {
             const recipe = await Recipe.create({ name, image, discription, author, ingredients, instructions });

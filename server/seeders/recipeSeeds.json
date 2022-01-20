@@ -1,0 +1,10 @@
+[
+    {
+        "name": "example",
+        "image": "",
+        "description": "some stuff with junk",
+        "author": "PJK",
+        "ingredients": ["stuff", "junk", "morestuff"],
+        "instructions": "do stuff with junk"
+    }
+]
