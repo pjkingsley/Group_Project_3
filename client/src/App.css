@@ -1,22 +1,29 @@
 
 body{
   margin:0;
-  background-color: var(--main-dark);
+  background: var(--background);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding:0;
+  color: var(--main-dark)
 }
 :root{
-  --main-light: rgb(55, 149, 250);
-  --main-dark: rgb(10, 2, 33);
-  --main-med:rgb(29, 50, 72);
-  --white:white;
+  --main-light: #e58c3d;
+  --main-dark: #213037;
+  --main-med2: #29898b;
+  --main-med1:#257150;
+  --white: white;
+  --background:white;
+  --header:radial-gradient(circle, rgba(229,140,61,1) 36%, rgba(255,214,83,1) 50%, rgba(235,180,5,1) 51%, rgba(229,140,61,1) 100%);
+/* font-family: 'Sen', sans-serif;
+   font-family: 'Sail', cursive; */
 }
 /* ------------------------main header--------------------------------------- */
 #main-header{
 display:grid;
 grid-template-columns: 1fr 1fr 1fr;
-text-align: center;
 padding-left:20%;
 padding-right:20%;
-background-color: var(--main-light);
+background: var(--header);
 /* max-height needs to change on mobile and larger sizes. */
 max-height: 15vh;
 }
@@ -32,13 +39,20 @@ max-height: 15vh;
 }
 #main-header h1{
   font-size: 3.5em;
-  font-family: 'Brush Script MT', cursive;
+  font-family: 'Sail', cursive;
   color: var(--main-dark)
 }
-/* ----------------------side bar----------------------------------- */
+#community{
+transform: translate(35%, -30%);
+}
+#cookbook{
+  float: left;
+  transform: translate(-25%, -30%);
+}
+/* ----------------------NAV BAR----------------------------------------------------------------------------------- */
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: var(--main-med);
+  background-color: var(--main-dark);
   overflow: hidden;
 }
 
@@ -50,7 +64,6 @@ text-align: center;
 padding: 14px 16px;
 text-decoration: none;
 font-size: 17px;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /* Change the color of links on hover */
@@ -69,59 +82,53 @@ color: var(--main-dark);
 .topnav-right {
 float: right;
 }
+/* ----------------------------MAIN BODY CSS------------------------------------- */
 
-/* ----------------------------LOGIN/SIGNUP FORM------------------------------------- */
-form {border: 2px solid var(--main-med);
-  margin: 1%;}
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
+#main-body{
+margin:5%;
+margin-top:2%;
+padding-bottom: 5%;
 }
-button {
-  background-color: var(--main-light);
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
+#main-body h1 {
+  color: var(--main-light);
+  font-family: 'Sen', sans-serif;
 }
-
-button:hover {
-  opacity: 0.5;
-}
-
-.imgcontainer {
+/* ----------------------About Page-------------------- */
+#AboutPage{
+  display:grid;
+  grid-template-columns: 1fr 2fr 1fr;
   text-align: center;
-  margin: 24px 0 12px 0;
-}
-img.avatar {
-  width: 20%;
-  border-radius: 50%;
-}
-.container {
-  padding: 16px;
-}
-#main-content{
-display: grid;
-grid-template-columns: 1fr 1fr;
-margin: 5%;
-}
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-  span.psw {
-     display: block;
-     float: none;
   }
-  .cancelbtn {
-     width: 100%;
+  #AboutPage img{
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+    filter: blur(.2px) grayscale(30%) drop-shadow(5px 5px 5px rgb(129, 129, 129));
+    border-radius: 5px;
   }
-}
+  #AboutContent{
+    text-align: center;
+    padding:5%;
+    line-height: 1.8;
+  }
+  #CreatorRecipes{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top:2%;
+    border-color: var(--main-med2);
+    border-width:3px;
+    border-radius:10px;
+    border-style: solid;
+    text-align: center;
+  }
+  #CreatorRecipes-title{
+    text-align: center;
+  }
+  .Video{
+    margin:6%;
+  }
 /* ------------------------------------------------------------------ */
+
 @keyframes logoMove{
   50% {padding-top: 0%;}
 }
