@@ -108,14 +108,13 @@ class RegisterBox extends React.Component{
             </div>
 
             <div className="input-group">
-            <label htmlFor="email">Email</label>
-            <input type="email" name="email"  className="login-input" placeholder='Email'/>
-            </div>
-
-
-            <div className="input-group">
             <label htmlFor="password">Password</label>
             <input type="password" name="password" className="login-input" placeholder='Password'/>
+            </div>
+
+            <div className="input-group">
+            <label htmlFor="email">Confirm Password</label>
+            <input type="confirmPassword" name="confirmPassword"  className="login-input" placeholder='Confirm Password'/>
             </div>
             <button type="button" className="login-btn" onClick={this.submitRegister.bind(this)}>Register</button>
 
