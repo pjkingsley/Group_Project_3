@@ -27,16 +27,21 @@ const resolvers = {
         },
     },
 
-    Mutation: {
+    Mutation: 
+    //creating a profile:
+    {
         addProfile: async (parent, { userName, password }) => {
             const profile = await Profile.create({ userName, password });
             const token = signToken(profile);
         },
+        //logging in:
+
         login: async (parent, { userName, password }) => {
             const profile = await Profile.findOne({ userName });
             if (!profile) {
                 throw new AuthenticationError('No profile with this name found!');
             };
+            //Verify password:
             const correctPw = await profile.isCorrectPassword(password);
             if (!correctPw) {
                 throw new AuthenticationError('No profile with this name found!');
@@ -44,10 +49,12 @@ const resolvers = {
             const token = signToken(profile);
             return { token, profile };
         },
+        //creating a recipe:
         createRecipe: async (parent, {name, image, discription, author, ingredients, instructions}) => {
             const recipe = await Recipe.create({ name, image, discription, author, ingredients, instructions });
             return { recipe }
         },
+        //editing a recipe:
         addRecipe: async (parent, { profileId, recipe }, context) => {
             if (context.user) {
                 return Profile.findOneAndUpdate(
