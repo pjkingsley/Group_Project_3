@@ -7,8 +7,9 @@ const resolvers = {
         profiles: async () => {
             return Profile.find();
         },
-        profile: async (parent, { profileId }) => {
-            return Profile.findOne({ _id: profileId });
+        profile: async (parent, { userName }) => {
+            console.log(userName);
+            return Profile.findOne({ userName: userName });
         },
         me: async (parent, args, context) => {
             if (context.user) {
@@ -31,8 +32,10 @@ const resolvers = {
     //creating a profile:
     {
         addProfile: async (parent, { userName, password }) => {
+            console.log({ userName, password });
             const profile = await Profile.create({ userName, password });
             const token = signToken(profile);
+            return { user: profile, token };
         },
         //logging in:
 
@@ -47,12 +50,13 @@ const resolvers = {
                 throw new AuthenticationError('No profile with this name found!');
             };
             const token = signToken(profile);
-            return { token, profile };
+            console.log(token, profile);
+            return { token, user: profile };
         },
         //creating a recipe:
         createRecipe: async (parent, {name, image, discription, author, ingredients, instructions}) => {
             const recipe = await Recipe.create({ name, image, discription, author, ingredients, instructions });
-            return { recipe }
+            return { recipe: recipe }
         },
         //editing a recipe:
         addRecipe: async (parent, { profileId, recipe }, context) => {
