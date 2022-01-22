@@ -1,7 +1,4 @@
 import React from 'react'
-// import login from '../../img/login-icon.png'
-// import info from '../../img/info-icon.png'
-// import fun from '../../img/fun-icon.jpeg'
 
 
 
