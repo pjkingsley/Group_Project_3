@@ -33,18 +33,3 @@ module.exports = {
     return jwt.sign({ data: payload }, secret, { expiresIn: expiration });
   },
 };
-
-
-//Talking with Alex on Saturday, he indicated that week 21, activity 21-26 would have good information for login and JWT's.  The below is from week 21, activity 21 ulils/auth.js:
-
-// const jwt = require("jsonwebtoken");
-
-// const secret = "mysecretssshhhhhhh";
-// const expiration = "2h";
-
-// module.exports = {
-//   signToken: function ({ email, name, _id }) {
-//     const payload = { email, name, _id };
-//     return jwt.sign({ data: payload }, secret, { expiresIn: expiration });
-//   },
-// };c
