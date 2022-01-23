@@ -14,7 +14,7 @@ class App extends Component {
         <Header/>
         <NavBar/>
         <div id="main-body"> 
-            {/* <Main/> */}
+            <Main/>
         </div>
     </div>)
 

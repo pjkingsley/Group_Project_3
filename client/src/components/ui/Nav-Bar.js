@@ -4,13 +4,12 @@ import React from 'react'
 
 const Header = () => {
     return (
-<div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="#contact">Contact</a> 
-  <a href="#about">About</a>
-  <a href="#news">Fun</a>
-  <div class="topnav-right">
-  <a href="#search">Search</a>
+<div className="topnav">
+  <a class="active" href="/">Home</a>
+  <a href="/about">About</a>
+  <a href="/Fun">Fun</a>
+  <a href="/explore">Explore</a>
+  <div className="topnav-right">
   </div>
 </div>
     )

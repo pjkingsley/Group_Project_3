@@ -1,20 +1,21 @@
 import React from 'react';
-import data from '../db-Test.json'
+// import props.data from '../db-Test.json'
 
-const Card = () => {
+const Card = (props) => {
+    console.log(props)
   return <div className='card'>
             <div className='card-inner'>
                 <div className='card-front'>
-                <img src={data.image} alt='Picture of the recipe food' />
+                <img src={props.data.image} alt='Picture of the recipe food' />
                 </div>
                 <div className='card-back'>
-                <h1>{data.name}</h1>
+                <h1>{props.data.name}</h1>
                 <ul>
                     <li>
-                    <strong> {data.name}</strong>
+                    <strong> {props.data.name}</strong>
                     </li>
                     <li>
-                    {data.name}
+                    {props.data.name}
                     </li>
                 </ul>
                 </div>
