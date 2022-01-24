@@ -27,8 +27,16 @@ module.exports = {
 
     return req;
   },
-  signToken: function ({ name, email, _id }) {
-    const payload = { name, email, _id };
+  //removed email from signtoken as we are not requiring it to create a user account previously this function looled liked the following before changing:
+//    signToken: function ({ userName, email, _id }) {
+//     const payload = { UserName, email, _id };
+
+//     return jwt.sign({ data: payload }, secret, { expiresIn: expiration });
+//   },
+// };
+
+  signToken: function ({ userName, _id }) {
+    const payload = { UserName, _id };
 
     return jwt.sign({ data: payload }, secret, { expiresIn: expiration });
   },

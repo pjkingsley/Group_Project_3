@@ -13,8 +13,8 @@ class App extends Component{
     <Header/>
     <NavBar/>
     <div id="main-body"> 
-        {/* <RendererApp/> */}
-        <AboutUsPage/>
+        <RendererApp/>
+        {/* <AboutUsPage/> */}
     </div>
     </div>)
 

@@ -1,24 +1,24 @@
 [
     {
-        "name": "PJK",
+        "userName": "PJK",
         "password": "password01",
         "authored": [],
         "saved": [] 
     },
     {
-        "name": "Elizabeth",
+        "userName": "Elizabeth",
         "password": "funkyDoRight",
         "authored": [],
         "saved": []
     },
     {
-        "name": "Frank",
+        "userName": "Frank",
         "password": "Sunshine",
         "authored": [],
         "saved": []
     },
     {
-        "name": "TabbyFresh",
+        "userName": "TabbyFresh",
         "password": "dabossisfresh",
         "authored": [],
         "saved": []

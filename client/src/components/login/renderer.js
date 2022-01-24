@@ -2,6 +2,8 @@ import React from 'react';
 import reactDOM from 'react-dom';
 import './loginSty.scss';
 
+
+
 export class RendererApp extends React.Component {
 
     constructor(props){
@@ -51,11 +53,12 @@ class LoginBox extends React.Component{
         this.state = {  };
     }
 
-    submitLogin(e){
+    
+    submitLogin(){
 
 
     }
-
+// const render = () =>
     render() {
         return(
         <div className="inner-container">
@@ -66,13 +69,15 @@ class LoginBox extends React.Component{
 
             <div className="input-group">
             <label htmlFor="username">Username</label>
-            <input type="text" name="username"  className="login-input" placeholder='Username'/>
+            <input type="text" name="username" onChange={this.handleUsername} className="login-input" placeholder='Username'/>
             </div>
 
             <div className="input-group">
             <label htmlFor="password">Password</label>
-            <input type="password" name="password" className="login-input" placeholder='Password'/>
+            <input type="password" name="password" onChange={this.handlePassword}className="login-input" placeholder='Password'/>
             </div>
+            {/* <button onClick={handleSubmit}>Submit
+            </button> */}
             <button type="button" className="login-btn" onClick={this.submitLogin.bind(this)}>Login</button>
 
         </div>
