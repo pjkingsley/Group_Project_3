@@ -1,0 +1,42 @@
+[
+    {
+        "name": "example",
+        "image": "",
+        "description": "some stuff with junk",
+        "author": "PJK",
+        "ingredients": ["stuff", "junk", "morestuff"],
+        "instructions": "do stuff with junk"
+    },
+    {
+        "name": "At home Chai Tea Latte",
+        "image": "https://www.ohhowcivilized.com/wp-content/uploads/chai-latte-scratch-1.jpg",
+        "description": "Best Chai Tea Latte you can make yourself",
+        "author": "SeaChels",
+        "ingredients": ["black tea", "cinnamon sticks", "cardamom pods", "whole cloves", "star anise", "black peppercorns", "ground nutmeg", "ground ginger", "ground cinnamon", "vanilla extract", "brown sugar", "milk", "heavy cream", "sugar", "water"],
+        "instructions": "Crush or chop star anise, cloves, and cardamom pods into smaller pieces so that the flavors can be infused better.  In a saucepan, add all ingredients for chai concentrate except the vanilla extract. The vanilla extract will get added later.  Use filtered water if you can since it’ll make your tea taste better.On low heat, let the tea and spices simmer. Stir occasionally.  This can be made ahead of time and into multiple batches to heat up for chai lattes throughout the week. Strain out tea and spice solids using a mesh strainer.  Add vanilla extract. The chai concentrate is now done!  Bring milk to simmer on the stovetop. When you see little bubbles form along the edges, take it off the heat. Keep an eye on it to make sure it doesn’t boil.  There are a few ways to make whipped cream and the easiest I’ve found is using a handheld milk frother to whisk the heavy cream and sugar together. Use a tall container so that you don’t make a mess.  I like to make the cream with soft peaks and not too stiff so it lays on top of the chai latte better, spreading out on top.  This recipe makes 4 servings so divide each part (chai concentrate, milk, whipped cream) into 4 cups.  Start by pouring half a cup of the chai concentrate into a mug. Add the hot milk, leaving room on top for the whipped cream.  Spoon on the whipped cream.  Optional: Garnish with ground cinnamon and a whole star anise."
+    },
+    {
+        "name": "Whole Wheat Crust Pizza!",
+        "image": "",
+        "description": "Hello My Friends, Pizza is a dish of Italian origin consisting of a flat, round base of dough baked with a topping of tomato sauce and cheese, typically with added vegetables or meat.",
+        "author": "Sara",
+        "ingredients": ["A glass of warm water", "One table spoon of sugar", "One packet of quick rise yeast", "Half table spoon of salt", "2 cups of whole wheat flour", "one table spon of oil", "Pizza sauce (as per your requirement", "Cheese (as per your requirement", "Chopped vegitables (your choice)"],
+        "instructions": "-Speciality of this pizza is whole wheat flour. -Add one glass of warm water, one table spoon of sugar and one packet of quick rise yeast. Stir it well and keep it aside for 10 mins.  -Add salt (as per your taste) to the 2 cups of whole wheat flour ( you could always add more, until you get that soft dough).  -Then add flour one scoop at a time into the bowl.  -Knead until a soft dough forms , add a little oil  and knead a bit more.  -Cover it and let rise in a warm place until doubled, for minimum 45 mins to one hour( Tip- keep it in the oven with light on).  -Grease baking tray with olive oil and Stretch and press the dough into a thin base.  -Add Pizza sauce, cheese(shredded mozzarella)and all the chopped vegetables( Onions, tomatoes, Olives, Bell pepper, mushrooms and spinach)for topping.  -A little more of cheese on the top.  -Bake at 350 degrees for  30 minutes or until crust is lightly browned. Add seasonings( Garlic grains, chilli flakes and Italian herbs) Enjoy your Pizza. -Please let me know, if you have any questions."
+    },
+    {
+        "name": "Eric's Party Pasta",
+        "image": "",
+        "description": "Hello!  This is a great spagetti recipe that will feed 8 people.",
+        "author": "Eric",
+        "ingredients": ["1 lb ground beef", "1 onion, chopped", "4 cloves garlic, minced", "1 small green bell pepper, diced", "1 (28 oz) can diced tomatoes", "1 (16 oz) can tomato sauce", "1 (6 oz) can tomato paste", "2 tsp dried oregano", "2 tsp dried basil", "1 tsp salt", "1/2 tsp black pepper"],
+        "instructions": "Prep:  15 min.  Cook: 1 hr 10 mins. Total: 1 hr 25 mins.  Servings: 8.  Directions:  Step 1:  Combine ground beef, onion, garlic, and green pepper in a large saucepan. Cook and stir until meat is brown and vegetables are tender. Drain grease.  Step 2:  Stir diced tomatoes, tomato sauce, and tomato paste into the pan. Season with oregano, basil, salt, and pepper. Simmer spaghetti sauce for 1 hour, stirring occasionally."
+    },
+    {
+        "name": "Mushroom and Arugula Pasta",
+        "image": "",
+        "description": "Why does everyone like Mushrooms?  'Cause they're FunGuys!",
+        "author": "PJK",
+        "ingredients": ["mushrooms", "arugula", "butter (optional)", "garlic", "white wine (or white wine vinegar)", "spices and herbs", "pasta (your preference)"],
+        "instructions":  "First, I'd cut up all your mushrooms and garlic.  Mushrooms (remember to clean them!) I use around five per person cut into pretty slices.  If you don't care about them being pretty, pre cut are fine.  Mince garlic, 1 to 2 cloves per person.  With that done heat up your saute pan on medium heat (over that heat you may burn butter/oil when it enters the pan) and start your pasta water on high heat (remember to salt and oil your pasta water!).  Now to saute the mushrooms.  I like to use butter with mushrooms as they keep their shape better unlike with olive oil which makes them shrivel but either can be used.  Add butter/oil first then mushrooms.  This is also when we add our spices.  I use a pinch per person of: fennel, chili flake, black pepper, dried thyme.  Basil and oregano also work great.  After the aromatics start filling up the kitchen with the good smells (1 - 2 minutes) add your garlic and salt (salt to taste).  Saute for a few minutes until the smell of garlic joins the aroma party then hit with white wine, enough to clover bottom of the pan so that everything is simmering nicely.  If using white wine vinegar, just add a couple of dashes and steal a couple tablespoons of pasta water to cover bottom of pan.  Then cover pan and reduce heat to med-low.  Now you are waiting for your pasta to cook so pour yourself some of that wine.  When pasta is done and before you drain it, if your saute pan is looking dry add a table spoon of pasta water to it to bring it back up.  Drain pasta, return pasta to pasta pan and add olive oil to the naked pasta so that all bits are lightly coated.  Then combine your pasta and mushrooms and finally, gently stir in a handful or two of fresh arugula.  After that plate it and cover it with parmesian cheese if so desired.  Don't forget to eat it!"
+    }
+]
