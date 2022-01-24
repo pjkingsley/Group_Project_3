@@ -11,20 +11,11 @@ class App extends Component {
   render(){
     return (    
     <div className="body-container">
-<<<<<<< HEAD
-    <Header/>
-    <NavBar/>
-    <div id="main-body"> 
-        <RendererApp/>
-        {/* <AboutUsPage/> */}
-    </div>
-=======
         <Header/>
         <NavBar/>
         <div id="main-body"> 
             <Main/>
         </div>
->>>>>>> d5b54150cb98737082bca08d2bd5bc569d15888e
     </div>)
 
 }
