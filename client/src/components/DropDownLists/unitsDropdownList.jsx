@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Select from 'react-select';
-
+import './styles.css'
 
 const units = [
     { label: "Cup", value: 1 },
@@ -14,7 +14,7 @@ function UnitsDropdown () {
     const [selectedOption, setSelectedOption] = useState(null);
 
     return (
-      <div className="App">
+      <div className="dropdown-menu">
         <Select
           defaultValue={selectedOption}
           onChange={setSelectedOption}
