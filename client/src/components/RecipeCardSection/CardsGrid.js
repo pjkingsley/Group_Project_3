@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from './Card'
-import './css/card.css'
 import data from '../db-Test.json'
+import './css/card.css'
 
 const CardsGrid = () => {
   console.log(data)
