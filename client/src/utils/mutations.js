@@ -2,14 +2,50 @@
 
 import { gql } from "@apollo/client";
 
-export const ADD_PROFILE = gql`
-  mutation addProfile($userName: String!, $password: String!) {
-    addProfile(userName: $userName, password: $password) {
+export const LOGIN_USER = gql`
+  mutation login($userName: String!, $password: String!) {
+    login(userName: $userName, password: $password) {
       token
-      profile {
+      user {
         _id
         userName
       }
     }
   }
 `;
+
+
+export const ADD_PROFILE = gql`
+  mutation addProfile($userName: String!, $password: String!) {
+    addProfile(userName: $userName, password: $password) {
+      token
+      user {
+        _id
+        userName
+      }
+    }
+  }
+`;
+
+
+export const ADD_RECIPE = gql`
+  mutation addRecipe($profileId: ID, $authored: String!) {
+    addRecipe(profileId: $profileID, authored: $authored) {
+    _id
+    userName
+    authored
+    }
+  }
+`;
+export const CREATE_RECIPE = gql`
+mutation createRecipe($name:String!,$image:String, $description:String!, $author: String!, $ingredients: String!, $instructions: String!) {
+  _id
+  name
+  image
+  description
+  author
+  ingredients
+  instructions
+  likes
+  date
+}`
