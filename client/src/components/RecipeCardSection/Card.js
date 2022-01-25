@@ -1,5 +1,4 @@
 import React from 'react';
-// import props.data from '../db-Test.json'
 
 const Card = (props) => {
     console.log(props)
@@ -12,10 +11,10 @@ const Card = (props) => {
                 <h1>{props.data.name}</h1>
                 <ul>
                     <li>
-                    <strong> {props.data.name}</strong>
+                    <strong> {props.data.description}</strong>
                     </li>
                     <li>
-                    {props.data.name}
+                    Submitted by: {props.data.author}
                     </li>
                 </ul>
                 </div>
