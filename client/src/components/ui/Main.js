@@ -5,13 +5,14 @@ import { Switch, Route } from 'react-router-dom';
 import RendererApp from '../login/renderer.js';
 import ExplorePage from '../RecipeCardSection/ExplorePage.js';
 import AboutUsPage from '../ui/AboutUsPage.js'
-
+import MyRecipes from '../RecipeCardSection/MyRecipes.js'
 const Main = () => {
   return (
     <Switch> {/* The Switch decides which component to show based on the current URL.*/}
       <Route exact path='/' component={RendererApp}></Route>
       <Route exact path='/explore' component={ExplorePage}></Route>
       <Route exact path='/about' component={AboutUsPage}></Route>
+      <Route exact path='/my-recipes' component={MyRecipes}></Route>
     </Switch>
   );
 }

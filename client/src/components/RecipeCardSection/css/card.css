@@ -1,9 +1,21 @@
-#card-grid{
-display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr;
+:root{
+  --main-light: #e58c3d;
+  --main-dark: #213037;
+  --main-med2: #29898b;
+  --main-med1:#257150;
+  --white: white;
+  --background:white;
+  --header:radial-gradient(circle, rgba(229,140,61,1) 36%, rgba(255,214,83,1) 50%, rgba(235,180,5,1) 51%, rgba(229,140,61,1) 100%);
+/* font-family: 'Sen', sans-serif;
+   font-family: 'Sail', cursive; */
 }
 
-  
+
+    #card-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
   .card {
     cursor: pointer;
     background-color: transparent;
@@ -46,12 +58,12 @@ grid-template-columns: 1fr 1fr 1fr 1fr;
     height: 250px;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    background-color: teal;
+    background-color: var(--main-med2);
     border-radius: 5px;
   }
   
   .card-back {
-    background-color: #333;
+    background-color: var(--main-dark);
     color: white;
     padding-left: 5%;
     padding-right:5%;
