@@ -9,33 +9,11 @@ import { setContext } from "@apollo/client/link/context";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 
-<<<<<<< HEAD
 import Main from "./pages/Main";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import Header from "./pages/Header";
 import NavBar from "./pages/NavBar";
-=======
-//main components---------------------->
-import Header from './components/ui/Header'
-import NavBar from './components/ui/Nav-Bar'
-import Main from './components/ui/Main'
-
-class App extends Component { 
-  render(){
-    return (    
-    <div className="body-container">
-        <Header/>
-        <NavBar/>
-        <div id="main-body"> 
-            <Main/>
-        </div>
-    </div>)
-
-}
-}
-export default App;
->>>>>>> 020c915ab5140875da92cc4f4a817286164e55ef
 
 // Construct our Main GraphQL API endpoint
 const httpLink = createHttpLink({
@@ -64,13 +42,12 @@ const client = new ApolloClient({
 function App() {
   return (
     <ApolloProvider client={client}>
-      <Router> 
-      
+      <Router>
         <div className="flex-column justify-flex-start min-100-vh">
           <Header />
           <NavBar />
-        
-          <div className="container">
+
+          <div id="main-body">
             <Route exact path="/">
               <Main />
             </Route>
@@ -82,10 +59,7 @@ function App() {
             </Route>
           </div>
         </div>
-     
-       
       </Router>
-      
     </ApolloProvider>
   );
 }

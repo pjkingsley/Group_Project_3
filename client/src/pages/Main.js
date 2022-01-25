@@ -8,7 +8,7 @@ import AboutUsPage from '../pages/AboutUsPage.js'
 
 const Main = () => {
   return (
-    <Switch> {/* The Switch decides which component to show based on the current URL.*/}
+    <Switch> {/* The Switch decides which component to show based on the current URL. if logged in explorer should be home page else login page*/}
       <Route exact path='/' component={Signup}></Route>
       <Route exact path='/explore' component={ExplorePage}></Route>
       <Route exact path='/about' component={AboutUsPage}></Route>
