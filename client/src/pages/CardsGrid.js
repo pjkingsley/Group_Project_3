@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from './Card'
-import data from '../db-Test.json'
+import data from '../components/db-Test.json'
 import './css/card.css'
 
 const CardsGrid = () => {

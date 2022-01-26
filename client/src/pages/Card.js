@@ -1,5 +1,5 @@
 import React from 'react';
-// import props.data from '../db-Test.json'
+// import props.data from '../components/db-Test.json';
 
 const Card = (props) => {
     console.log(props)

@@ -48,15 +48,9 @@ function App() {
           <NavBar />
 
           <div id="main-body">
-            <Route exact path="/">
+        
               <Main />
-            </Route>
-            <Route exact path="/login">
-              <Login />
-            </Route>
-            <Route exact path="/signup">
-              <Signup />
-            </Route>
+          
           </div>
         </div>
       </Router>

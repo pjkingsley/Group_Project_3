@@ -36,28 +36,28 @@ const resolvers = {
             const profile = await Profile.create({ userName, password });
             const token = signToken(profile);
             // return { user, token };
-            return { user:profile, token }
+            return { user:profile, token };
         },
         //logging in:
 
         login: async (parent, { userName, password }) => {
-            const profile = await Profile.findOne({ userName, password });
+            const profile = await Profile.findOne({ userName });
             if (!profile) {
-                throw new AuthenticationError('No profile with this name found!');
+                throw new AuthenticationError('No profile with this name or password found!');
             };
             //Verify password:
             const correctPw = await profile.isCorrectPassword(password);
             if (!correctPw) {
-                throw new AuthenticationError('No profile with this name found!');
+                throw new AuthenticationError('No profile with this name or password found!');
             };
             const token = signToken(profile);
             console.log(token, profile);
-            return { token, user};
+            return { token, user:profile};
         },
         //creating a recipe:
         createRecipe: async (parent, {name, image, discription, author, ingredients, instructions}) => {
             const recipe = await Recipe.create({ name, image, discription, author, ingredients, instructions });
-            return { recipe: recipe }
+            return { recipe: recipe };
         },
         //editing a recipe:
         addRecipe: async (parent, { profileId, recipe }, context) => {

@@ -3,10 +3,10 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useMutation } from "@apollo/client";
 
-import Auth from "../../utils/auth";
+import Auth from "../utils/auth";
 //The following need to be modified so that we can look for recipes  and add recipes 
 import { ADD-RECIPE } from "../../utils/mutations";
-import { QUERY_RECIPES, QUERY_ME, } from "../../utils/queries";
+import { QUERY_RECIPES, QUERY_ME, } from "../utils/queries";
 
 
 const Recipe = () => {
