@@ -6,11 +6,12 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useMutation } from "@apollo/client";
 import { LOGIN_USER } from "../utils/mutations";
+import ExplorePage from "../pages/ExplorePage";
 
 import Auth from "../utils/auth";
 
-const Login = (props) => {
-  const [formState, setFormState] = useState({ email: "", password: "" });
+const Login = () => {
+  const [formState, setFormState] = useState({ userName: "", password: "" });
   const [login, { error, data }] = useMutation(LOGIN_USER);
 
   // update state based on form input changes
@@ -39,7 +40,7 @@ const Login = (props) => {
 
     // clear form values
     setFormState({
-      email: "",
+      userName: "",
       password: "",
     });
   };
@@ -52,17 +53,17 @@ const Login = (props) => {
           <div className="card-body">
             {data ? (
               <p>
-                Success! You may now head{" "}
-                <Link to="/">back to the homepage.</Link>
+                Success! You may now use our{" "}
+                <Link to="./ExplorePage"> Explorer Page.</Link>
               </p>
             ) : (
               <form onSubmit={handleFormSubmit}>
                 <input
                   className="form-input"
-                  placeholder="Your email"
-                  name="email"
-                  type="email"
-                  value={formState.email}
+                  placeholder="Your username"
+                  name="userName"
+                  type="text"
+                  value={formState.name}
                   onChange={handleChange}
                 />
                 <input
@@ -86,6 +87,7 @@ const Login = (props) => {
             {error && (
               <div className="my-3 p-3 bg-danger text-white">
                 {error.message}
+                {console.log("line88 of Login.js")}
               </div>
             )}
           </div>

@@ -1,5 +1,9 @@
 # Group_Project_3
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> eb277b79d15b3f72e11218179688b030d66371a3
 ## Name of the Project: Community cookbook ##
 
 ## Description: ##
@@ -44,3 +48,7 @@ A community forum to share recipes developed with a full MERN stack.
 
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> eb277b79d15b3f72e11218179688b030d66371a3
