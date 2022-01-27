@@ -15,6 +15,7 @@ const Main = () => {
       {" "}
       {/* The Switch decides which component to show based on the current URL. if logged in explorer should be home page else login page*/}
       {/* <Route exact path='/' component={Signup}></Route> */}
+      
       <Route exact path="/about" component={AboutUsPage}></Route>
       <Route exact path="/Fun" component={Fun}></Route>
       <Route exact path="/explore" component={ExplorePage}></Route>

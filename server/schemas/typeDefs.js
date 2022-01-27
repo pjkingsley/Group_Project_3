@@ -20,7 +20,7 @@ const typeDefs = gql`
     ingredients: [String]
     instructions: String
     likes: Int
-    date: Timestamp
+    date: Date
   }
 
   type Query {

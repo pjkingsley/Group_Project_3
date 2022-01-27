@@ -48,9 +48,7 @@ function App() {
           <NavBar />
 
           <div id="main-body">
-        
-              <Main />
-          
+            <Main />
           </div>
         </div>
       </Router>

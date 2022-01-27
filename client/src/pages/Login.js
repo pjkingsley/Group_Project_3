@@ -6,7 +6,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useMutation } from "@apollo/client";
 import { LOGIN_USER } from "../utils/mutations";
-import ExplorePage from "../pages/ExplorePage";
+// import ExplorePage from "./ExplorePage";
 
 import Auth from "../utils/auth";
 
@@ -54,7 +54,7 @@ const Login = () => {
             {data ? (
               <p>
                 Success! You may now use our{" "}
-                <Link to="./ExplorePage"> Explorer Page.</Link>
+                <Link to="./explore"> Explorer Page.</Link>
               </p>
             ) : (
               <form onSubmit={handleFormSubmit}>
