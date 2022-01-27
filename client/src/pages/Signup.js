@@ -13,7 +13,13 @@ const Signup = () => {
     userName: "",
     password: "",
   });
-  //TAKE OUT data if problems exist and to have it in correctly
+  //removing data from { *data*, error }] as some have suggested causes issues with the code.  Reason unknown.
+  
+  
+  
+  
+  
+  
   const [addProfile, { data, error }] = useMutation(ADD_PROFILE);
 
   const handleChange = (event) => {
