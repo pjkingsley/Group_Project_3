@@ -56,8 +56,8 @@ function SubmissionForm() {
         <label id='align'>Recipe Name:</label>
         <input
           type="text"
-          name="username"
-          value={inputs.username || ""}
+          name="recipename"
+          value={inputs.recipename || ""}
           onChange={handleChange}
         />
       </div>
@@ -70,40 +70,40 @@ function SubmissionForm() {
           onChange={handleChange}
         />
       </div>
-      <div className="recipeForm">
-        <label id='align'>Ingredients:
-          <input
-            type="text"
-            name="ingredients"
-            value={inputs.ingredients || ""}
-            onChange={handleChange}
-          />
+     // <div className="recipeForm">
+       // <label id='align'>Ingredients:
+       //   <input
+        //    type="text"
+         //   name="ingredients"
+          //  value={inputs.ingredients || ""}
+          //  onChange={handleChange}
+         // />
 
-          <div className="units">
-            <Box sx={{ minWidth: 120 }}>
-              <FormControl fullWidth>
-                <InputLabel id="demo-simple-select-label">Units</InputLabel>
-                <Select
-                  labelId="demo-simple-select-label"
-                  id="demo-simple-select"
-                  value={units}
-                  label="Units"
-                  onChange={handleChange}
-                >
-                  <MenuItem value={'Cups'}>Cups</MenuItem>
-                  <MenuItem value={'Tablespoon'}>Tablespoon</MenuItem>
-                  <MenuItem value={'Teaspoon'}>Teaspoon</MenuItem>
-                  <MenuItem value={'Ounce'}>Ounce</MenuItem>
-                  <MenuItem value={'Gallon'}>Gallon</MenuItem>
-                  <MenuItem value={'Pound'}>Pound</MenuItem>
-                  <MenuItem value={'Grams'}>Grams</MenuItem>
-                  <MenuItem value={'ml'}>ml</MenuItem>
-                </Select>
+         // <div className="units">
+           // <Box sx={{ minWidth: 120 }}>
+           //   <FormControl fullWidth>
+              //  <InputLabel id="demo-simple-select-label">Units</InputLabel>
+               // <Select
+                 // labelId="demo-simple-select-label"
+                //  id="demo-simple-select"
+                //  value={units}
+                //  label="Units"
+                //  onChange={handleChange}
+               // >
+               //   <MenuItem value={'Cups'}>Cups</MenuItem>
+                //  <MenuItem value={'Tablespoon'}>Tablespoon</MenuItem>
+                //  <MenuItem value={'Teaspoon'}>Teaspoon</MenuItem>
+                //  <MenuItem value={'Ounce'}>Ounce</MenuItem>
+                 // <MenuItem value={'Gallon'}>Gallon</MenuItem>
+                 // <MenuItem value={'Pound'}>Pound</MenuItem>
+                //  <MenuItem value={'Grams'}>Grams</MenuItem>
+                 // <MenuItem value={'ml'}>ml</MenuItem>
+               // </Select>
 
-              </FormControl>
-            </Box>
+             // </FormControl>
+           // </Box>
 
-          </div>
+         // </div>
 
 
           <div>
