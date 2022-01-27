@@ -1,6 +1,5 @@
 # Group_Project_3
 
-
 ## Name of the Project: Community cookbook ##
 
 ## Description: ##
@@ -42,7 +41,5 @@ A community forum to share recipes developed with a full MERN stack.
 
 
 ## Email:
-
-
 
 
