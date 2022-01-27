@@ -134,12 +134,7 @@ function SubmissionForm() {
               </Button>
             </div>
           </div>
-
-
-
-
-
-        </label>
+       </label>
       </div>
 
       <div className="recipeForm">
