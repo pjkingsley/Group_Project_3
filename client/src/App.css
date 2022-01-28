@@ -34,8 +34,8 @@ max-height: 15vh;
     margin-right: auto;
     width: 35%;
     padding:0%;
-    padding-top:5%;
-    animation: logoMove 1s infinite;
+    padding-top:2%;
+    animation: logoMove 2s infinite;
 }
 #main-header h1{
   font-size: 3.5em;
@@ -43,11 +43,11 @@ max-height: 15vh;
   color: var(--main-dark)
 }
 #community{
-transform: translate(35%, -30%);
+transform: translate(20%, -30%);
 }
 #cookbook{
   float: left;
-  transform: translate(-25%, -30%);
+  transform: translate(-30%, -30%);
 }
 /* ----------------------NAV BAR----------------------------------------------------------------------------------- */
 /* Add a black background color to the top navigation */
@@ -152,5 +152,13 @@ padding-bottom: 5%;
 /* ------------------------------------------------------------------ */
 
 @keyframes logoMove{
-  50% {padding-top: 0%;}
+50%{  transform: rotate(10deg)}
+}
+
+/* -----------------MEDIA QUERIES--------------------- */
+@media screen and (max-width: 600px) {
+
+}
+@media screen and (max-width: 1200px) {
+
 }
