@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import ReactDOM from "react-dom";
-import './styles.css';
+import './css/styles.css';
 import Box from '@mui/material/Box';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';

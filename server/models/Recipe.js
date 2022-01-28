@@ -7,7 +7,7 @@ const recipeSchema = new Schema({
         unique: false,
     },
     image: {
-        type: Buffer,
+        type: String,
         required: false,
     },
     description: {

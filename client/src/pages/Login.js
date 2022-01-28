@@ -34,6 +34,7 @@ const Login = () => {
       });
 
       Auth.login(data.login.token);
+      
     } catch (e) {
       console.error(e);
     }
@@ -54,7 +55,7 @@ const Login = () => {
             {data ? (
               <p>
                 Success! You may now use our{" "}
-                <Link to="./explore"> Explorer Page.</Link>
+                <Link to="/explore"> Explorer Page.</Link>
               </p>
             ) : (
               <form onSubmit={handleFormSubmit}>

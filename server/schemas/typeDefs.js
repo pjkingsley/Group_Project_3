@@ -14,13 +14,13 @@ const typeDefs = gql`
   type Recipe {
     _id: ID
     name: String
-    image: Buffer
+    image: String
     description: String
     author: String
     ingredients: [String]
     instructions: String
     likes: Int
-    date: Date
+    date: String
   }
 
   type Query {
