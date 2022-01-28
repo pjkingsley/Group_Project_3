@@ -14,12 +14,7 @@ const Signup = () => {
     password: "",
   });
   //removing data from { *data*, error }] as some have suggested causes issues with the code.  Reason unknown.
-  
-  
-  
-  
-  
-  
+
   const [addProfile, { data, error }] = useMutation(ADD_PROFILE);
 
   const handleChange = (event) => {
@@ -95,7 +90,6 @@ const Signup = () => {
                 </button>
               </form>
             )}
-
             {error && (
               <div className="my-3 p-3 bg-danger text-white">
                 {error.message}

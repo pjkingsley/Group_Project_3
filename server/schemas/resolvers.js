@@ -55,9 +55,9 @@ const resolvers = {
             return { token, user: profile};
         },
         //creating a recipe:
-        createRecipe: async (parent, {name, image, discription, author, ingredients, instructions}) => {
-            const recipe = await Recipe.create({ name, image, discription, author, ingredients, instructions });
-            return { recipe: recipe };
+        createRecipe: async (parent, {name, image, discription, ingredients, instructions},context) => {
+            const recipe = await Recipe.create({ name, image, discription, author:context.user._id, ingredients, instructions });
+            return recipe;
         },
         //editing a recipe:
         addRecipe: async (parent, { profileId, recipe }, context) => {

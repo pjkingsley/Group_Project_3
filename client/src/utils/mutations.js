@@ -39,7 +39,7 @@ export const ADD_RECIPE = gql`
 `;
 //likes removed from return values as there will be no likes when recipe is created. _id and date should be created by by mongodb so they should be available to return.  
 export const CREATE_RECIPE = gql`
-mutation createRecipe($name:String!,$image:Buffer, $description:String!, $author: String!, $ingredients: String!, $instructions: String!) {
+mutation createRecipe($name:String!,$image:String, $description:String!, $ingredients: String!, $instructions: String!) {createRecipe (name:$name,image:$image, description:$description, ingredients: $ingredients, instructions: $instructions) {
   _id
   name
   image
@@ -49,4 +49,5 @@ mutation createRecipe($name:String!,$image:Buffer, $description:String!, $author
   instructions
   likes
   date
-}`
+}
+}`;
