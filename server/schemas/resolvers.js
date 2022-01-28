@@ -55,10 +55,19 @@ const resolvers = {
             return { token, user: profile};
         },
         //creating a recipe:
-        createRecipe: async (parent, {name, image, discription, ingredients, instructions},context) => {
-            const recipe = await Recipe.create({ name, image, discription, author:context.user._id, ingredients, instructions });
+        createRecipe: async (parent, {name, image, discription, ingredients, instructions},context) => { if (context.user) {
+            const recipe = await Recipe.create({ name, image, discription, author:context.user._id, ingredients, instructions, });
+
+            await Profile.findOneAndUpdate(
+                {_id: context.user._id},
+                { $addToSet: {authored:recipe.author }}
+            );
+           
             return recipe;
-        },
+           
+        }
+        throw new AuthenticationError("You need to be logged in to create a recipe.");
+    },
         //editing a recipe:
         addRecipe: async (parent, { profileId, recipe }, context) => {
             if (context.user) {
