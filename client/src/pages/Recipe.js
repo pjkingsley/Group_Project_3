@@ -50,7 +50,7 @@ const Recipe = () => {
           <h4 className="card-header bg-dark text-light p-2">Submit Recipe</h4>
           <div className="card-body">
             {data ? (
-              <p>{/* //put link to look at recipes */}</p>
+             <Link to="/MyRecipesPage">Here are your recipes.</Link> 
             ) : (
               <form onSubmit={handleFormSubmit}>
                 <input

@@ -9,7 +9,9 @@ import Signup from "./Signup.js";
 import Login from "./Login.js";
 import Fun from "./fun-page.js";
 // import SubmissionForm from './submissionForm.js';
-import Recipe from './Recipe.js'
+import Recipe from './Recipe.js';
+import MyRecipesPage from './MyRecipesPage.js';
+import Profile from './Profile.js';
 
 const Main = () => {
   return (
@@ -23,6 +25,9 @@ const Main = () => {
       <Route exact path="/Login" component={Login}></Route>
       <Route exact path="/Signup" component={Signup}></Route>
       <Route exact path="/Recipe" component={Recipe}></Route> 
+      <Route exact path="/MyRecipesPage" component={MyRecipesPage}></Route>
+      <Route exact path="/Profile" component=
+      {Profile}></Route>
       {/* <Route exact path="/submissionForm" component={SubmissionForm}></Route> */}
     </Switch>
   );

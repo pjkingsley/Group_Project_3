@@ -4,7 +4,7 @@ const typeDefs = gql`
   type Profile {
     _id: ID
     userName: String!
-    authored: [Recipe]
+    authored: [Recipe]!
   }
   type Auth {
     user: Profile

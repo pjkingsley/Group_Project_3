@@ -16,6 +16,8 @@ const Header = () => {
         {/* <a href="/submissionForm">Create Recipe 1</a> */}
         <a href="/Login">Login</a>
         <a href="/Signup">Signup</a>
+        <a href="/Profile">Profile</a>
+        <a href="/MyRecipesPage">My Recipe</a>
 
         <div className="topnav-right"></div>
       </div>

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import CardsGrid from './CardsGrid';
 import { Switch, Route } from "react-router-dom";
-
+import data from '../components/db-Test.json'
 export class ExplorePage extends Component {
   render() {
     return (
@@ -14,7 +14,7 @@ export class ExplorePage extends Component {
           </label>
           <input type="submit" value="Submit" />
         </form>
-        <CardsGrid />
+        <CardsGrid data={data}/>
       </div>
     );
   }
