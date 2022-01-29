@@ -50,15 +50,15 @@ We're a rag-tag group of rookie programmers taking a bootcamp in order to better
 
 ## Contributors: ##
 
-* Peter Kingsley
+* Peter Kingsley: https://github.com/pjkingsley
 
-* Eric Anderson
+* Eric Anderson: https://github.com/ericdavidanderson
 
-* Chelby Sallady
+* Chelby Sallady: https://github.com/Sea-Chels
 
 * Carlos Barajas
 
-* Sara (Sarala K)
+* Sara (Sarala K): https://github.com/sarasuni
 
 ## Live deployed link: 
 
