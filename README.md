@@ -24,6 +24,16 @@ We're a rag-tag group of rookie programmers taking a bootcamp in order to better
     * React
     * JWT
     * GraphQL
+    
+## Setup: ##
+To run this project, install it locally by executing the following commands:
+
+```
+npm install
+
+npm run develop
+
+```
 
 ## Website Screen Shots: ##
 ![image](./screenshots/screenshot-1.png)
