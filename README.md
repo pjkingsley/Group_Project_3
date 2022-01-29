@@ -35,6 +35,18 @@ We're a rag-tag group of rookie programmers taking a bootcamp in order to better
 
 ## Website Contents: ##
 
+1. The header contains website title and navigation buttons, which navigates webpage to the associated pages.
+2. The navigation bar contains the following sections:
+     * Home
+     * About
+     * Fun
+     * Create recipe 2
+     * Login
+     * Signup
+3. The user can explore recipes from the homepage.
+4. About page contains creators story and thier favorite recipes.
+5. User needs to signup and login to submit their recipes.
+6. Users can submit their recipes on create recipe page.
 
 
 
