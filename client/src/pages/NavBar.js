@@ -12,7 +12,7 @@ const Header = () => {
         <a href="/explore">Home</a>
         <a href="/about">About</a>
         <a href="/Fun">Fun</a>
-        <a href="/Recipe">Create Recipe 2</a>
+        <a href="/Recipe">Create Recipe</a>
         {/* <a href="/submissionForm">Create Recipe 1</a> */}
         <a href="/Login">Login</a>
         <a href="/Signup">Signup</a>
