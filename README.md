@@ -28,9 +28,14 @@ We're a rag-tag group of rookie programmers taking a bootcamp in order to better
 ## Setup: ##
 To run this project, install it locally by executing the following commands:
 
+### Install ###
 ```
 npm install
 
+```
+ ### Usage ###
+ 
+```
 npm run develop
 
 ```
