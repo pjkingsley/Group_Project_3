@@ -7,9 +7,11 @@ const resolvers = {
         profiles: async () => {
             return Profile.find();
         },
-        profile: async (parent, { userName }) => {
-            console.log(userName);
-            return Profile.findOne({ userName: userName });
+        profile: async (parent, args, context) => {
+            
+            const profile = await Profile.findOne({ _id: context.user._id }).populate('authored');
+            console.log(profile);
+            return profile
         },
         me: async (parent, args, context) => {
             if (context.user) {
