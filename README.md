@@ -40,6 +40,8 @@ We're a rag-tag group of rookie programmers taking a bootcamp in order to better
 
 ## Live deployed link: 
 
+https://github.com/pjkingsley/Group_Project_3
+
 
 
 
