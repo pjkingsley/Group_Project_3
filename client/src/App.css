@@ -34,8 +34,8 @@ max-height: 15vh;
     margin-right: auto;
     width: 35%;
     padding:0%;
-    padding-top:5%;
-    animation: logoMove 1s infinite;
+    padding-top:2%;
+    animation: logoMove 2s infinite;
 }
 #main-header h1{
   font-size: 3.5em;
@@ -43,11 +43,11 @@ max-height: 15vh;
   color: var(--main-dark)
 }
 #community{
-transform: translate(35%, -30%);
+transform: translate(20%, -30%);
 }
 #cookbook{
   float: left;
-  transform: translate(-25%, -30%);
+  transform: translate(-30%, -30%);
 }
 /* ----------------------NAV BAR----------------------------------------------------------------------------------- */
 /* Add a black background color to the top navigation */
@@ -149,8 +149,70 @@ padding-bottom: 5%;
   #explore-search-bar:active{
     border-color: var(--main-dark);
   }
-/* ------------------------------------------------------------------ */
+/* -----------------animations------------------------------------------------- */
 
 @keyframes logoMove{
-  50% {padding-top: 0%;}
+50%{  transform: rotate(10deg)}
+}
+
+/* -----------------MEDIA QUERIES--------------------- */
+@media screen and (max-width: 1200px) {
+  /* #main-header{
+    /* max-height: 25vh; */
+  /* } */
+}
+
+@media screen and (max-width: 1000px) {
+  #main-header h1{
+    font-size: 2.5em;
+  }
+  #community{
+    transform: translate(20%, -30%);
+    }
+    #cookbook{
+      float: left;
+      transform: translate(-30%, -30%);
+    }
+    #CreatorRecipes{
+      grid-template-columns: 1fr 1fr;
+    }
+    #AboutPage{
+      grid-template-columns: 1fr 1fr;
+      }
+}
+@media screen and (max-width: 600px) {
+  .topnav a{
+    font-size: 100%;
+    padding:2%;
+    margin:0;
+  }
+  #main-header h1{
+    font-size: 2em;
+  }
+  #community{
+    transform: translate(0, 0%);
+    }
+  #cookbook{
+    float: left;
+    transform: translate(0%,0);
+  }
+  #logo{
+    visibility: hidden;
+  }
+  /* ----about page---------------- */
+  #AboutPage{
+    display:grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    }
+    #AboutPage img{
+      width: 300px;
+      height: 300px;
+    }
+    #CreatorRecipes{
+      grid-template-columns: 1fr;
+    }
+    #about-image{
+      display: none;
+    }
 }

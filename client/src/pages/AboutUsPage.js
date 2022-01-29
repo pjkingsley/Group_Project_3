@@ -9,7 +9,7 @@ export class AboutUsPage extends Component{
         return <div>
         <div id='AboutPage'>
               <div>
-                  <img src={Image1} alt='Picture of food'/> 
+                  <img id='about-image' src={Image1} alt='Picture of food'/> 
               </div>
               <div id='AboutContent'>
                   <h1>About the Creators</h1>

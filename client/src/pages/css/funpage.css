@@ -1,0 +1,60 @@
+*{
+    text-align: center;
+}
+:root{
+    --main-light: #e58c3d;
+    --main-dark: #213037;
+    --main-med2: #29898b;
+    --main-med1:#257150;
+    --white: white;
+    --background:white;
+    --header:radial-gradient(circle, rgba(229,140,61,1) 36%, rgba(255,214,83,1) 50%, rgba(235,180,5,1) 51%, rgba(229,140,61,1) 100%);
+  /* font-family: 'Sen', sans-serif;
+     font-family: 'Sail', cursive; */}
+
+#Pun-Button{
+    font-family: 'Sen', sans-serif;
+    font-size:2em;
+    color: var(--main-light);
+    background: var(--main-dark);
+    border: none;
+    border-radius: 40px;
+    padding:2%;
+}
+#Pun-Button:hover{
+    background-color: var(--main-med2);
+    color: var(--white);
+}
+
+#pun{
+    line-height: 3em;
+    font-size:3em;
+    font-family: 'Sen', sans-serif;
+}
+#secret{
+color: rgb(240, 240, 240);
+}
+
+/* Media Queries----------------------------------- */
+
+  @media screen and (max-width: 1200px) {
+    #pun{
+        line-height: 3em;
+        font-size:3em; 
+    }
+  }
+  @media screen and (max-width: 768px) {
+    #pun{
+        line-height: 2em;
+        font-size:2em; 
+    }
+}
+@media screen and (max-width: 600px) {
+    #pun{
+        line-height: 1em;
+        font-size:1em;
+    }
+    #PunButton{
+        font-size:1em;
+    }
+  }
