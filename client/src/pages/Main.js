@@ -9,7 +9,7 @@ import Signup from "./Signup.js";
 import Login from "./Login.js";
 import Fun from "./fun-page.js";
 // import SubmissionForm from './submissionForm.js';
-// import Recipe from './Recipe.js'
+import Recipe from './Recipe.js'
 
 const Main = () => {
   return (
@@ -22,7 +22,7 @@ const Main = () => {
       <Route exact path="/explore" component={ExplorePage}></Route>
       <Route exact path="/Login" component={Login}></Route>
       <Route exact path="/Signup" component={Signup}></Route>
-      {/* <Route exact path="/Recipe" component={Recipe}></Route> */}
+      <Route exact path="/Recipe" component={Recipe}></Route> 
       {/* <Route exact path="/submissionForm" component={SubmissionForm}></Route> */}
     </Switch>
   );

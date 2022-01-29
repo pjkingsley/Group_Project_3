@@ -2,61 +2,47 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useMutation } from "@apollo/client";
-
+import { CREATE_RECIPE } from "../utils/mutations";
 import Auth from "../utils/auth";
-//The following need to be modified so that we can look for recipes  and add recipes 
-// import { ADD-RECIPE } from "../utils/mutations";
-import {CREATE_RECIPE } from "../utils/mutations";
 // import { QUERY_RECIPES, QUERY_ME, } from "../utils/queries";
+//The following need to be modified so that we can look for recipes  and add recipes 
+
 
 
 const Recipe = () => {
   const [formState, setFormState] = useState({
-   name:"",
-   image:"",
-   description:"",
-   author:"",
-   ingredients:"",
-   instructions:"",
+    name: "",
+    image: "",
+    description: "",
+    ingredients: "",
+    instructions: "",
   });
 
-const [createRecipe, { data, error }] = useMutation(CREATE_RECIPE);
+  const [createRecipe, { data, error }] = useMutation(CREATE_RECIPE);
 
-const handleChange = (event) => {
-  const { name, value } = event.target;
+  const handleChange = (event) => {
+    const { name, value } = event.target;
 
-  setFormState({
-    ...formState,
-    [name]: value,
-  });
-};
+    setFormState({
+      ...formState,
+      [name]: value,
+    });
+  };
 
   const handleFormSubmit = async (event) => {
     event.preventDefault();
-    console.log("client/src/pages, line 36")
+    console.log("client/src/pages, line 34")
 
     try {
       const { data } = await createRecipe({
         variables: { ...formState },
-      }),
-    } catch (e){
+      });
+      Auth.login(data.addProfile.token);
+    } catch (e) {
       
     }
   };
 
-  //     setNewRecipe("");
-  //   } catch (err) {
-  //     console.error(err);
-  //   }
-  // };
-
-  // const handleChange = (event) => {
-  //   const { name, value } = event.target;
-  // };
-
-  // return (
-  //   <div>
-      <h3>Would you like to submit a recipe?</h3>
   return (
     <main className="flex-row justify-center mb-4">
       <div className="col-12 col-lg-10">
@@ -64,70 +50,70 @@ const handleChange = (event) => {
           <h4 className="card-header bg-dark text-light p-2">Submit Recipe</h4>
           <div className="card-body">
             {data ? (
-              <p>
-                {/* //THIS PATH NEEDS TO BE CHECKED: <Link to="/">back to the homepage.</Link> */}
-                {/* Success! You may now head{" "}
-                <Link to="/">back to the homepage.</Link> */}
-              </p>
+              <p>{/* //put link to look at recipes */}</p>
             ) : (
               <form onSubmit={handleFormSubmit}>
-               <input
+                <input
                   className="form-input"
                   placeholder="recipe name"
                   name="name"
                   type="text"
                   value={formState.name}
                   onChange={handleChange}
-                /> 
-                 <input
+                />
+                <input
                   className="form-input"
-                  placeholder="image"
-                  name="userName"
+                  placeholder="image: not yet active"
+                  name="image"
                   type="text"
-                  value={formState.name}
-                  onChange={handleChange}
-                /> 
-                 <input
-                  className="form-input"
-                  placeholder="Your username"
-                  name="userName"
-                  type="text"
-                  value={formState.name}
-                  onChange={handleChange}
-                />  
-                 <input
-                  className="form-input"
-                  placeholder="Your username"
-                  name="userName"
-                  type="text"
-                  value={formState.name}
-                  onChange={handleChange}
-                />  
-                 <input
-                  className="form-input"
-                  placeholder="Your username"
-                  name="userName"
-                  type="text"
-                  value={formState.name}
-                  onChange={handleChange}
-                />  
-                  <input
-                  className="form-input"
-                  placeholder="Your username"
-                  name="userName"
-                  type="text"
-                  value={formState.name}
+                  value={formState.image}
                   onChange={handleChange}
                 />
-                </form>
-            )
-        <p>
-          You need to be logged in to share your recipes. Please{" "}
-          <Link to="/login">login</Link> or <Link to="/signup">signup.</Link>
-        </p>
-      )}
-    </div>
+                <input
+                  className="form-input"
+                  placeholder="description"
+                  name="description"
+                  type="text"
+                  value={formState.description}
+                  onChange={handleChange}
+                />
+
+                <input
+                  className="form-input"
+                  placeholder="ingredients"
+                  name="ingredients"
+                  type="text"
+                  value={formState.ingredients}
+                  onChange={handleChange}
+                />
+                <input
+                  className="form-input"
+                  placeholder="instructions"
+                  name="instructions"
+                  type="text"
+                  value={formState.instructions}
+                  onChange={handleChange}
+                />
+                <button
+                  className="btn btn-block btn-primary"
+                  style={{ cursor: "pointer" }}
+                  type="submit"
+                >
+                  Submit
+                </button>
+              </form>
+            )}
+            {error && (
+              <div className="my-3 p-3 bg-danger text-white">
+                {error.message}
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+    </main>
   );
+}
 
 
 
