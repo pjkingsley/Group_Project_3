@@ -48,7 +48,17 @@ We're a rag-tag group of rookie programmers taking a bootcamp in order to better
 5. User needs to signup and login to submit their recipes.
 6. Users can submit their recipes on create recipe page.
 
+## Contributors: ##
 
+* Peter Kingsley
+
+* Eric Anderson
+
+* Chelby Sallady
+
+* Carlos Barajas
+
+* Sara (Sarala K)
 
 ## Live deployed link: 
 
