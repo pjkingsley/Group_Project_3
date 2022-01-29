@@ -53,14 +53,3 @@ mutation createRecipe($name:String!,$image:String, $description:String!, $ingred
   }
 }`;
 
-// mutation createRecipe($name:String!,$image:String, $description:String!, $author: String!, $ingredients: String!, $instructions: String!) {
-//   _id
-//   name
-//   image
-//   description
-//   author
-//   ingredients
-//   instructions
-//   likes
-//   date
-// 
