@@ -4,7 +4,7 @@ const typeDefs = gql`
   type Profile {
     _id: ID
     userName: String!
-    authored: [Recipe]
+    authored: [String]
   }
   type Auth {
     user: Profile
@@ -16,7 +16,7 @@ const typeDefs = gql`
     name: String
     image: String
     description: String
-    author: ID
+    author: String
     ingredients: [String]
     instructions: String
     likes: Int
@@ -24,10 +24,11 @@ const typeDefs = gql`
   }
 
   type Query {
-    profiles: [Profile]
+    profiles: [Profile]!
     profile(userName: String!): Profile
-    recipes: [Recipe]
-    myRecipes(recipes: ID, author: ID!): [Recipe]
+    recipes: [Recipe]!
+    author(author: String!): Recipe!
+    myRecipes(recipes: ID, author: ID!): [Recipe]!
     me: Profile
   }
 

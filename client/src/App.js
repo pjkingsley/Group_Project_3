@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useContext } from 'react';
+import Header from './components/Header.js';
+import NavBar from './components/NavBar.js';
 import {
   ApolloClient,
   InMemoryCache,
@@ -6,55 +8,51 @@ import {
   createHttpLink,
 } from "@apollo/client";
 import { setContext } from "@apollo/client/link/context";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import "./App.css";
-
-
-import Main from "./pages/Main";
-import Signup from "./pages/Signup";
-import Login from "./pages/Login";
-import Header from "./pages/Header";
-import NavBar from "./pages/NavBar";
-
-// Construct our Main GraphQL API endpoint
+import { BrowserRouter as Router } from 'react-router-dom';
+import Home from './components/pages/Home.js';
+import SignInUp from './components/SignInUp.js';
+import './App.css';
+import Store from './utils/Store.js';
+import { Context } from './utils/Store.js';
 const httpLink = createHttpLink({
-  uri: "/graphql",
+  uri: '/graphql',
 });
 
-// Construct request middleware that will attach the JWT token to every request as an `authorization` header
 const authLink = setContext((_, { headers }) => {
-  // get the authentication token from local storage if it exists
-  const token = localStorage.getItem("id_token");
-  // return the headers to the context so httpLink can read them
+  const token =localStorage.getItem('id_token');
   return {
     headers: {
       ...headers,
-      authorization: token ? `Bearer ${token}` : "",
+      authorization: token ? `Bearer ${token}` : '',
     },
   };
 });
 
 const client = new ApolloClient({
-  // Set up our client to execute the `authLink` middleware prior to making the request to our GraphQL API
   link: authLink.concat(httpLink),
   cache: new InMemoryCache(),
 });
 
+
 function App() {
+
+  
+
   return (
+  <Store>
     <ApolloProvider client={client}>
       <Router>
         <div className="flex-column justify-flex-start min-100-vh">
           <Header />
           <NavBar />
-
           <div id="main-body">
-            <Main />
+              <Home />
           </div>
         </div>
       </Router>
     </ApolloProvider>
-  );
-}
+  </Store>
+  )
+};
 
 export default App;

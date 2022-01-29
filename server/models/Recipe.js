@@ -13,12 +13,10 @@ const recipeSchema = new Schema({
     description: {
         type: String,
     },
-    author: 
-        {
-            type: Schema.Types.ObjectId,
-            ref: "Profile",
-        },
-
+    author: {
+        type: String,
+        trim: true,
+    },
     ingredients: [
         {
             type: String,

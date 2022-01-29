@@ -15,10 +15,10 @@
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^7.0.0"
-  },
+ },
   "dependencies": {
-    "axios": "^0.25.0",
     "react-router-dom": "^6.2.1",
     "react-simple-video-player": "^1.0.0"
+    
   }
 }

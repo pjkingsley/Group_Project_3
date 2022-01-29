@@ -1,8 +1,8 @@
 import { gql } from '@apollo/client';
 
 export const QUERY_RECIPES = gql`
-  query getRecipes($recipe: ID) {
-      recipes(recipe: $recipe) {
+  query allRecipes {
+      recipes {
         _id
         name
         image
@@ -11,7 +11,6 @@ export const QUERY_RECIPES = gql`
         ingredients
         instructions
         likes
-        date
     }
   }
 `;

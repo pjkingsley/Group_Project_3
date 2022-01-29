@@ -1,13 +1,5 @@
 [
     {
-        "name": "example",
-        "image": "",
-        "description": "some stuff with junk",
-        "author": "PJK",
-        "ingredients": ["stuff", "junk", "morestuff"],
-        "instructions": "do stuff with junk"
-    },
-    {
         "name": "At home Chai Tea Latte",
         "image": "https://www.ohhowcivilized.com/wp-content/uploads/chai-latte-scratch-1.jpg",
         "description": "Best Chai Tea Latte you can make yourself",
@@ -17,7 +9,7 @@
     },
     {
         "name": "Whole Wheat Crust Pizza!",
-        "image": "",
+        "image": "http://veggieandthebeastfeast.com/wp-content/uploads/2014/02/IMG_37751.jpg",
         "description": "Hello My Friends, Pizza is a dish of Italian origin consisting of a flat, round base of dough baked with a topping of tomato sauce and cheese, typically with added vegetables or meat.",
         "author": "Sara",
         "ingredients": ["A glass of warm water", "One table spoon of sugar", "One packet of quick rise yeast", "Half table spoon of salt", "2 cups of whole wheat flour", "one table spon of oil", "Pizza sauce (as per your requirement", "Cheese (as per your requirement", "Chopped vegitables (your choice)"],
@@ -25,7 +17,7 @@
     },
     {
         "name": "Eric's Party Pasta",
-        "image": "",
+        "image": "https://createwithcream.ph/sites/site.prod1.createwithcream.ph/files/recipes/2019-11/NAPC_Creamy_Filipino_Spaghetti_250mL-min.jpg",
         "description": "Hello!  This is a great spagetti recipe that will feed 8 people.",
         "author": "Eric",
         "ingredients": ["1 lb ground beef", "1 onion, chopped", "4 cloves garlic, minced", "1 small green bell pepper, diced", "1 (28 oz) can diced tomatoes", "1 (16 oz) can tomato sauce", "1 (6 oz) can tomato paste", "2 tsp dried oregano", "2 tsp dried basil", "1 tsp salt", "1/2 tsp black pepper"],
@@ -33,7 +25,7 @@
     },
     {
         "name": "Mushroom and Arugula Pasta",
-        "image": "",
+        "image": "https://fettysfoodblog.com/wp-content/uploads/2020/05/Pasta-With-Mushroom-Roasted-Garlic-And-Arugula-5-500x375.jpg",
         "description": "Why does everyone like Mushrooms?  'Cause they're FunGuys!",
         "author": "PJK",
         "ingredients": ["mushrooms", "arugula", "butter (optional)", "garlic", "white wine (or white wine vinegar)", "spices and herbs", "pasta (your preference)"],

@@ -52,7 +52,7 @@ const resolvers = {
             };
             const token = signToken(profile);
             console.log(token, profile);
-            return { token, user: profile};
+            return { token, user:profile};
         },
         //creating a recipe:
         createRecipe: async (parent, {name, image, discription, ingredients, instructions},context) => { if (context.user) {
@@ -67,7 +67,8 @@ const resolvers = {
            
         }
         throw new AuthenticationError("You need to be logged in to create a recipe.");
-    },
+        },
+
         //editing a recipe:
         addRecipe: async (parent, { profileId, recipe }, context) => {
             if (context.user) {

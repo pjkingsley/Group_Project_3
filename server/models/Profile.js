@@ -15,8 +15,8 @@ const profileSchema = new Schema({
     },
     authored: [
         {
-            type: Schema.Types.ObjectId,
-            ref: "Recipe",
+            type: String,
+            trim: true,
         },
     ],
     saved: [
