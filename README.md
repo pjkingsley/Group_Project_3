@@ -58,11 +58,11 @@ npm run develop
      * Fun
      * Explore
      * Create
-3. The user can explore recipes.
+3. Home page contains login and signup forms. User needs to signup and login to submit their recipes.
 4. About page contains creators story and thier favorite recipes.
-5. User needs to signup and login to submit their recipes.
-6. User can submit their recipes on create page.
-7. Fun page offers a surprise to the user everytime they visit the page.
+5. Fun page offers a surprise to the user everytime they visit the page.
+6. The user can explore the recipes.
+7. User can submit their own recipes on create page.
 
 ## Contributors: ##
 
